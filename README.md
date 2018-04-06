@@ -12,6 +12,16 @@ cd wrapamap
 npm install
 ```
 
+Create an env file (Any file with a '.env' extension) in the root of this project to hold your API keys from Google and Bing. Currently, this project expects: 
+```sh
+GOOGLE_MAPS_API_KEY="<Your API Key>"
+BING_MAPS_API_KEY="<Your API Key>"
+```
+
+You can create your own API keys at the following places:
+1. Google (<https://developers.google.com/maps/documentation/geocoding/get-api-key>)
+2. Bing (<https://www.bingmapsportal.com/>)
+
 ## Contributing
 
 1. Fork it (<https://github.com/kyleewalters/wrapamap/fork>)
