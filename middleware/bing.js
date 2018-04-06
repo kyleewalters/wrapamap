@@ -6,7 +6,6 @@ export function formattedAddress(options) {
         request({
             uri: options.url + req.params.lat + ',' + req.params.lon + '?o=json&key=' + options.key
         }, function (err, res, body) {
-            console.log(options.url + req.params.lat + ',' + req.params.lon + '?o=json&key=' + options.key)
             req.mapResponse = JSON
                 .parse(body)
                 .resourceSets[0]
